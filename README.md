@@ -81,13 +81,13 @@ Berikut adalah langkah-langkah untuk menjalankan proyek ini secara lokal atau me
 #### Get product
 
 ```bash
-  GET /api/items/:id
+  GET /api/products/:id
 ```
 
 #### Create item
 
 ```bash
-  POST /api/items
+  POST /api/products
 ```
 ```bash
   {
@@ -100,7 +100,7 @@ Berikut adalah langkah-langkah untuk menjalankan proyek ini secara lokal atau me
 #### Update product
 
 ```bash
-  PUT /api/items/:id
+  PUT /api/products/:id
 ```
 ```bash
   {
@@ -113,5 +113,5 @@ Berikut adalah langkah-langkah untuk menjalankan proyek ini secara lokal atau me
 #### Delete product
 
 ```bash
-  DELETE /api/items/:id
+  DELETE /api/products/:id
 ```
