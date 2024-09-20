@@ -74,19 +74,19 @@ Berikut adalah langkah-langkah untuk menjalankan proyek ini secara lokal atau me
 
 #### Get all product
 
-```http
+```bash
   GET /api/products
 ```
 
 #### Get product
 
-```http
+```bash
   GET /api/items/:id
 ```
 
 #### Create item
 
-```http
+```bash
   POST /api/items
 ```
 ```bash
@@ -99,7 +99,7 @@ Berikut adalah langkah-langkah untuk menjalankan proyek ini secara lokal atau me
 
 #### Update product
 
-```http
+```bash
   PUT /api/items/:id
 ```
 ```bash
@@ -112,6 +112,6 @@ Berikut adalah langkah-langkah untuk menjalankan proyek ini secara lokal atau me
 
 #### Delete product
 
-```http
+```bash
   DELETE /api/items/:id
 ```
