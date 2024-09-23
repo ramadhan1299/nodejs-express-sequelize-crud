@@ -1,78 +1,78 @@
 # Node.js Express Sequelize CRUD
 
-Proyek ini adalah aplikasi CRUD (Create, Read, Update, Delete) sederhana yang dibangun menggunakan Node.js, Express, dan Sequelize. Aplikasi ini dapat digunakan sebagai dasar untuk proyek yang membutuhkan API REST dengan database SQL.
+This project is a simple CRUD (Create, Read, Update, Delete) application built using Node.js, Express, and Sequelize. It can be used as a foundation for projects requiring a REST API with an SQL database.
 
-## Tentang Proyek
+## About the Project
 
-Proyek ini dibuat untuk memudahkan pengembangan aplikasi backend berbasis Node.js dengan menggunakan database SQL, khususnya PostgreSQL. Aplikasi ini mendemonstrasikan bagaimana cara membuat API CRUD dengan Sequelize sebagai ORM, dan PostgreSQL sebagai basis data. Fungsionalitas termasuk migrasi, seeding data, serta dokumentasi REST API.
+This project is designed to simplify the development of Node.js-based backend applications using SQL databases, specifically PostgreSQL. It demonstrates how to create a CRUD API using Sequelize as an ORM and PostgreSQL as the database. Functionalities include migrations, data seeding, and REST API documentation.
 
-## Instalasi
+## Installation
 
-Berikut adalah langkah-langkah untuk menjalankan proyek ini secara lokal atau menggunakan Docker.
+Here are the steps to run this project locally or using Docker.
 
-### Instalasi Lokal
+### Local Installation
 
-1. **Clone repository GitHub:**
+1. **Clone the GitHub repository:**
 
    ```bash
    git clone https://github.com/ramadhan1299/nodejs-express-sequelize-crud.git
 
-2. **Masuk ke direktori proyek**
+2. **Navigate to the project directory**
     ```bash
     cd nodejs-express-sequelize-crud
 
-3. **Instal dependensi**
+3. **Install dependencies**
     ```bash
     npm install
 
-4. **Buat file konfigurasi .env dari contoh**
+4. **Create a .env configuration file from the example**
     ```bash
     cp .env.example .env
 
-5. **Atur variabel environment**
+5. **Set environment variables**
 
-6. **Jalankan migrasi database dengan Sequelize**
+6. **Run database migrations with Sequelize**
     ```bash
     cd src
     npx sequelize-cli db:create
     npx sequelize-cli db:migrate
     npx sequelize-cli db:seed:all
 
-7. **Jalankan aplikasi**
+7. **Start the application**
     ```bash
     npm start
 
-### Instalasi dengan Docker
+### Docker Installation
 
-1. **Clone repository GitHub:**
+1. **Clone the GitHub repository:**
 
    ```bash
    git clone https://github.com/ramadhan1299/nodejs-express-sequelize-crud.git
 
-2. **Masuk ke direktori proyek**
+2. **Navigate to the project directory**
     ```bash
     cd nodejs-express-sequelize-crud
 
-3. **Atur variabel environment di docker-compose.yml**
+3. **Set environment variables in docker-compose.yml**
 
-4. **Jalankan Docker**
+4. **Run Docker**
     ```bash
     docker-compose up --build -d
 
-5. **Jalankan migrasi database dengan Sequelize**
+5. **Run database migrations with Sequelize**
     ```bash
     docker exec -it <id-container-app> sh
     cd src
     npx sequelize-cli db:migrate
     npx sequelize-cli db:seed:all
 
-6. **Jalankan aplikasi**
+6. **Start the application**
     ```bash
     npm start
 
 ## API Reference
 
-#### Get all product
+#### Get all products
 
 ```bash
   GET /api/products
@@ -84,7 +84,7 @@ Berikut adalah langkah-langkah untuk menjalankan proyek ini secara lokal atau me
   GET /api/products/:id
 ```
 
-#### Create item
+#### Create product
 
 ```bash
   POST /api/products
